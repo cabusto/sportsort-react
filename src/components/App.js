@@ -9,7 +9,7 @@ class App extends React.Component {
     return (
       <div className="Sport Sort">
         <div className="menu">
-          <Header />
+          <Header tagline="Choose Your Winner!" days={50} />
         </div>
         <Order />
         <Inventory />
