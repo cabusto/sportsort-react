@@ -3,7 +3,7 @@ import * as React from "react";
 const Header = ({ tagline, days }) => (
   <header className="top">
     <h1>
-      Player
+      Catch
       <span className="ofThe">
         <span className="of">Of</span>
         <span className="the">The</span>
