@@ -1,5 +1,4 @@
 import * as React from "react";
-import PlayerCard from "../components/PlayerCard";
 import Header from "../components/Header";
 import Order from "../components/Order";
 import Inventory from "../components/Inventory";
