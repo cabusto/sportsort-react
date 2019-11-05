@@ -7,7 +7,7 @@ class LeaguePicker extends React.Component {
     // stop the form from submitting
     event.preventDefault();
     // get text from input (Golden rule of react: Don't touch the DOM! use state if can)
-    console.log(this);
+    console.log(this.myInput);
     //Change page to /store/whatever-they-entered
   };
 
