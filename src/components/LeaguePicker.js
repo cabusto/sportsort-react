@@ -20,7 +20,7 @@ class LeaguePicker extends React.Component {
           <h2>Search Players</h2>
           <input
             type="text"
-            ref={this.myInput}
+            ref={this.myInput} f
             required={true}
             placeholder="Select League"
             defaultValue="blah"
