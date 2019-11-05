@@ -7,8 +7,9 @@ class LeaguePicker extends React.Component {
     // stop the form from submitting
     event.preventDefault();
     // get text from input (Golden rule of react: Don't touch the DOM! use state if can)
-    console.log(this.myInput);
+    const leagueName = this.myInput.current.value;
     //Change page to /store/whatever-they-entered
+    this.props.history.push(`/league/${leagueName}`);
   };
 
   render() {
@@ -20,7 +21,7 @@ class LeaguePicker extends React.Component {
           <input
             type="text"
             ref={this.myInput}
-            required
+            required={true}
             placeholder="Select League"
             defaultValue="blah"
           />
