@@ -1,5 +1,6 @@
 import * as React from "react";
 import Header from "../components/Header";
+import Fish from "../components/Fish";
 import Order from "../components/Order";
 import Inventory from "../components/Inventory";
 import sampleFishes from "../sample-fishes";
@@ -34,6 +35,11 @@ class App extends React.Component {
       <div className="catch-of-the-day">
         <div className="menu">
           <Header tagline="Fresh Seafood Market!" days={50} />
+          <ul className="fishes">
+            {Object.keys(this.state.fishes).map(key => (
+              <Fish key={key} details={this.state.fishes[key]}>{key}</Fish>
+            ))}
+          </ul>
         </div>
         <Order />
         <Inventory
